@@ -22,6 +22,9 @@ body{
     border-radius: 20px;
     cursor: pointer;
 }
+main{
+    margin-top: 100px;
+}
 /* share style end  */
 /* navbar section style start */
 .navbar{
@@ -89,6 +92,36 @@ body{
     justify-content: space-evenly;
 }
 /* brand e-comarce section end */
+/* Product section start */
+.product-collection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.product-collection > h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--praimary-color);
+}
+.product-items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    margin-top: 40px;
+}
+.product-items > .item{
+    max-width: 320px;
+}
+.item{
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.item > img{
+    width: 100%;
+}
+/* Product section end */
 /* mobile veiw responsive section style start */
 @media screen and (max-width:576px) {
     /* navbar section mobile veiw */
@@ -134,8 +167,9 @@ body{
         display: grid;
         grid-template-columns: repeat(4,1fr);
         margin: 0px auto;
-        margin-top: 40px;
+        margin-top: -50px;
         padding-left: 30px;
+        margin-bottom: 30px;
     }
     .brand-section > img{
         width: 70px;
@@ -144,5 +178,11 @@ body{
         justify-content: center;
     }
     /* brand e-comarce section  */
+    /* product section mobile veiw */
+    .product-items{
+        display: flex;
+        flex-direction: column;
+    }
+    /* product section mobile veiw */
 }
 /* mobile veiw responsive section style start */
