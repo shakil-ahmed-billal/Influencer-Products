@@ -12,7 +12,6 @@
 }
 body{
     font-family: "Poppins", sans-serif;
-    max-width: 1900px;
 }
 .btn{
     background-color: var(--btn-color);
@@ -45,6 +44,12 @@ body{
 }
 .navbar > ul > li > a{
     text-decoration: none;
+}
+.fa-bars{
+    display: none;
+}
+.navbar > i {
+    display: none;
 }
 /* navbar section style end */
 /* banner section style start */
@@ -83,6 +88,61 @@ body{
     margin: 70px auto;
     justify-content: space-evenly;
 }
-
-
 /* brand e-comarce section end */
+/* mobile veiw responsive section style start */
+@media screen and (max-width:576px) {
+    /* navbar section mobile veiw */
+    .navbar{
+        padding: 35px 30px 20px 30px;
+        align-items: center;
+    }
+    .navbar > ul{
+        display: none;
+    }
+    .navbar > i{
+        display: flex;
+    }
+    .navbar > .fa-bars{
+        display:flex;
+    }
+    /* navbar section mobile veiw */
+    /* banner section moblile veiw */
+    .banner{
+        flex-direction: column-reverse;
+        margin-top: 20px;
+        background-position: top center;
+        background-size: 340px
+    }
+    .banner-image > img{
+        width: 360px;
+        margin-left: 150px;
+    }
+    .banner-title{
+        margin: 0;
+        text-align: center;
+    }
+    .banner-title > h1{
+        font-size: 1.8rem;
+        margin: 15px 0px;
+    }
+    .banner-title > P{
+        margin-bottom: 20px;
+    }
+    /* banner section moblile veiw */
+    /* brand e-comarce section  */
+    .brand-section{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        margin: 0px auto;
+        margin-top: 40px;
+        padding-left: 30px;
+    }
+    .brand-section > img{
+        width: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* brand e-comarce section  */
+}
+/* mobile veiw responsive section style start */
